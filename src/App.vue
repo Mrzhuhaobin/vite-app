@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <img alt="Vue logo" src="./assets/logo.png"  class="logo"/>
+  <HelloWorld/>
   <router-link to="/home">home</router-link>
   <div></div>
   <router-link to="/about">about</router-link>
@@ -21,7 +21,9 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style lang="scss">
+@import './style/mixins.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
