@@ -17,25 +17,6 @@ export default defineConfig({
             }
             return `vant/es/${name}/index.css`
           }
-        },
-        {
-          libName: 'ant-design-vue',
-          style(name) {
-            if (/popconfirm/.test(name)) {
-              // support multiple style file path to import
-              return [
-                'ant-design-vue/es/button/style/index.css',
-                'ant-design-vue/es/popover/style/index.css'
-              ]
-            }
-            return `ant-design-vue/es/${name}/style/index.css`
-          }
-        },
-        {
-          libName: 'element-plus',
-          style: (name) => {
-            return`element-plus/lib/theme-chalk/${name}.css`
-          }
         }
       ]
     })

@@ -1,6 +1,6 @@
 <template>
     <div>首页</div>
-    <vant-button type="primary">返回</vant-button>
+    <van-button type="primary">返回</van-button>
     <div class="test-list">
         <div v-for="item in list" :ref="setItemRef">{{item}}</div>
     </div>
@@ -13,7 +13,7 @@ import { Button } from 'vant';
 export default defineComponent({
     name: 'home',
     component: {
-        vantButton: Button
+        [Button.name]: Button
     },
     setup () {
         let itemRefs :Array<any> = [];
