@@ -1,6 +1,0 @@
-//设计稿尺寸大小，假如设计稿宽度750
-$baseDesignWidth: 750;
-
-@function px2rem($px) {
-    @return $px / $baseDesignWidth
-}

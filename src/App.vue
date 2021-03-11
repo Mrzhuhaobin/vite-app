@@ -1,28 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png"  class="logo"/>
-  <HelloWorld msg="123"/>
-  <router-link to="/home">home</router-link>
-  <div></div>
-  <router-link to="/about">about</router-link>
-  <div></div>
-  <router-link to="/list">list</router-link>
-  <router-view></router-view>
+  <home></home>
+  <!-- <router-view></router-view> -->
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue';
+import home from './pages/home.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    home
   }
 })
 </script>
 
 <style lang="scss">
-@import './style/mixins.scss';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
