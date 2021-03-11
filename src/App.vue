@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png"  class="logo"/>
-  <HelloWorld/>
+  <HelloWorld msg="123"/>
   <router-link to="/home">home</router-link>
   <div></div>
   <router-link to="/about">about</router-link>
